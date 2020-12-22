@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+.background{
+    width: 100vw;
+    height: 80vh;
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png");
+    background-position: center;
+    background-size: cover;
+    border-bottom-right-radius: 175% 30%;
+    border-bottom-left-radius: 175% 30%;
+    opacity: 100;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+.title{ 
+    font-family: "Dancing Script", cursive; font-size: 70px; 
+    padding-top: 50px;
+}
+
+.content{
+    font-size: 35px;
+    font-family: "Lato";
+    margin-top: 30px;
+    
+}
+
+#small{
+    width: 50%;
+    font-size: 25px;
+    font-weight: lighter;
+    justify-content: center;
+    margin-left: 50%; 
+    transform: translate(-50%);
+}
+
+.btn{
+    margin-top: 30px;
+    background-color: white;
+    border:none;
+    text-align: center;
+    padding: 15px 32px;
+    border-radius: 60px;
+}

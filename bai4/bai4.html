@@ -17,10 +17,11 @@
                 <p style="font-size:20px; margin-left: 15px;">StartupAMP</p>
             </div>
             <div class="navbar navbar-compo" id="abc">
+                <a class="clsIcon" onclick="closeNav()">&times;</a>
                 <a href="#home">HOME</a>
                 <div class="dropdown">
-                    <button class="dropbtn">MORE DEMOS <i class="fa fa-caret-down" style="margin-left: 3px;"></i>
-                    </button>
+                    <a class="dropbtn">MORE DEMOS <i class="fa fa-caret-down" style="margin-left: 3px;"></i>
+                    </a>
                     <div class="dropdown-content">
                         <a href="#" style="margin-top: 40px;">Link 1</a>                          <a href="#">Link 2</a>
                         <a href="#">Link 3</a>
@@ -28,7 +29,7 @@
                 </div>
                 <a href="#video">WATCH VIDEO</a>
                 <a href="#buynow" class="buynow">BUY NOW</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <a class="icon" onclick="openNav()">
                     <i class="fa fa-bars fa-3x"></i>
                 </a>
             </div>
@@ -47,13 +48,22 @@
     </div>
 </body>
 <script>
-    function myFunction() {
-        var x = document.getElementById("abc");
-        x.className += " responsive";
-        if(x.className =="dropdown-content"){
-            x.className += " responsive";
+    function openNav() {
+        var x = document.getElementsByClassName("body");
+        x[0].style.opacity="0.5";
+        var y = document.getElementById("abc");
+        if(y.className =="navbar navbar-compo"){
+            y.className += " responsive";
         }
-        console.log(x);
+    }
+    function closeNav(){
+        var x = document.getElementsByClassName("body");
+        x[0].style.opacity="1";
+        var y = document.getElementById("abc");
+        if(y.className =="navbar navbar-compo responsive"){
+            y.className ="navbar navbar-compo";
+        }
+
     }
     </script>
 </html>

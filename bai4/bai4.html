@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>bai4</title>
 </head>
 <body>
     <!-- https://docs.google.com/document/d/1tEOEeoTmpdH9rgpCYcaYRaBhPljmI2uCDygZSWJwyzs/edit -->
@@ -16,7 +16,7 @@
                 <img src="https://mobirise.com/extensions/startupamp/assets/images/logo-1.png" alt="logo" class="logo">
                 <p style="font-size:20px; margin-left: 15px;">StartupAMP</p>
             </div>
-            <div class="navbar navbar-compo">
+            <div class="navbar navbar-compo" id="abc">
                 <a href="#home">HOME</a>
                 <div class="dropdown">
                     <button class="dropbtn">MORE DEMOS <i class="fa fa-caret-down" style="margin-left: 3px;"></i>
@@ -28,6 +28,9 @@
                 </div>
                 <a href="#video">WATCH VIDEO</a>
                 <a href="#buynow" class="buynow">BUY NOW</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars fa-3x"></i>
+                </a>
             </div>
         </div>
         <div class="body-wrapper">
@@ -43,4 +46,14 @@
         </div>
     </div>
 </body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("abc");
+        x.className += " responsive";
+        if(x.className =="dropdown-content"){
+            x.className += " responsive";
+        }
+        console.log(x);
+    }
+    </script>
 </html>

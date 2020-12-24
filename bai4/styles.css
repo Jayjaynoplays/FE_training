@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jura:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
+p,h1,h2,h3,h4,h5,h6 {
+    margin:0;
+    padding:0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin:0;
 }
 
 a{
@@ -13,7 +20,7 @@ a{
 
 .wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 760px;
     overflow: hidden;
     position: relative;
 }
@@ -49,10 +56,8 @@ a{
 .navbar-compo{
     position: absolute !important;
     width: auto;
-    /* justify-content: flex-end; */
-    right: 20%;
+    right: 10%;
     font-size: 13px;
-    /* justify-content: space-between; */
 }
 .navbar-compo .icon{
     display: none;
@@ -172,6 +177,9 @@ a{
     .navbar-logo{
         margin-left: 4%;
     }
+    .navbar-compo{
+        right: 50px;
+    }
     .body{
         width: 70%;
     }
@@ -182,18 +190,12 @@ a{
     .background-img{
         height: 100%;
     }
-    .navbar-compo{
-        margin-right: 45px;
-        margin-left: 35%;
-    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
     .navbar-compo{
         width: auto;
-        margin-left: 65%;
-        margin-right: 20px;
         justify-content: start;
     }
     .navbar-compo .dropdown-content{
@@ -247,11 +249,7 @@ a{
         float: none;
         display: block;
         text-align: left;
-        /* margin-bottom: 100px; */
     }
-    /* .navbar-compo.responsive.dropdown.dropdown-content{
-        display: none;
-    } */
 
     .body{
         width: 90%;
@@ -261,15 +259,43 @@ a{
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     .navbar-compo{
-        margin-left: 55%;
-        margin-right: 20px;
+        right: 20px;
+    }
+    .navbar-compo.navbar-compo.responsive{
+        width: 40%;
     }
 }
 
 @media (max-width:360px){
-
-
+    .navbar-compo.navbar-compo.responsive{
+        width: 70%;
+    }
+    .body{
+        width: 100%;
+    }
+    .title h1{
+        font-size: 50px;
+    }
 }
 
-@media (max-width: 280px){
+@media (max-width: 320px){
+    .bot{
+
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+        align-items: center;
+    }
+    .bot-btn{
+        width: 50%;
+    }
+    .bot a{
+        margin-left: 0;
+        
+    }
+    .bot-demo{
+        margin-top: 30px;
+    }
 }

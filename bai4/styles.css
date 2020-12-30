@@ -280,7 +280,6 @@ a{
 
 @media (max-width: 320px){
     .bot{
-
         height: auto;
         width: auto;
         display: flex;

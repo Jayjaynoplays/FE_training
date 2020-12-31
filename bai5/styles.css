@@ -3,6 +3,9 @@
   padding: 0;
   margin: 0;
 }
+input:focus::placeholder{
+  opacity: 0;
+}
 
 .container {
   width: 100vw;
@@ -79,7 +82,7 @@
 .input--icon {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 20px;
   transform: translate(50%, -52%);
   z-index: 1;
   color: #333;
@@ -92,21 +95,28 @@
   border-radius: 25px;
   background: #e6e6e6;
   border: none;
+  outline: none;
+  box-sizing:border-box;
+  padding-left: 50px;
 }
+
 
 ::placeholder {
   font-size: 15px;
   font-family: "Poppins";
   font-weight: normal;
-  padding-left: 70px;
 }
 
 .btn {
+  position: absolute;
+  height: 100%;
+  width: 100%;
   background: #57b846;
   font-family: "Montserrat";
   font-size: 15px;
   font-weight: bold;
   color: white;
+  padding-left: 0px; 
 }
 .doanxem {
   width: 70%;
@@ -137,31 +147,41 @@ a:active {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
   .wrapper {
     padding: 15px 0 15px 0;
   }
+  .form--right--wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form--right--title{
+    padding-left: 0;
+  }
+  .form--right--input {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+  }
   .form--right--bot {
-    margin-left: -60px;
+    margin-left: 0px;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-  .form--container {
-    height: 730px;
-  }
+@media (max-width: 991.98px) {
+  .wrapper {
+    padding: 15px 15px 15px 15px;
+  } 
   .form--left img {
     width: 60%;
     height: auto;
     margin-top: -110px;
     margin-left: 15px;
-  }
-  .form--right--wrapper {
-    margin-top: -60px;
-  }
-  .form--right--input {
-    margin-left: 20px;
   }
   .input--frame {
     width: 80%;
@@ -169,17 +189,15 @@ a:active {
   .doanxem {
     width: 80%;
   }
-  .form--right--bot {
-    margin-left: -70px;
-  }
 }
-@media (max-width: 823px) {
+/* @media (max-width: 823px) {
   .wrapper {
     padding: 15px 15px 15px 15px;
   }
-}
+} */
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
+
   .wrapper {
     padding: 15px 0 15px 0;
   }
@@ -220,10 +238,14 @@ a:active {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
+  .form--right--input{
+    width: 100%;
+  }
 }
 
 @media (max-width: 360px) {
+
 }
 
 @media (max-width: 280px) {

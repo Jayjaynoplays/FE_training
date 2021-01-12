@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+button {
+  border: none;
+  outline: none;
+  color: white;
+}
+button:hover{
+    cursor: pointer;
+}
+
+::placeholder {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-white {
+  color: rgb(235, 239, 240);
+}
+.text-grey {
+  color: rgb(134, 142, 149);
+}
+
+.bg-clr-gr {
+  background-color: rgb(42, 187, 156);
+  border-top: 1px solid rgb(37, 164, 136);
+  border-left: 1px solid rgb(37, 164, 136);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo--wrapper {
+    padding-left: 1px;
+  width: 50%;
+  height: auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-right: 1px solid rgb(201, 195, 195);
+}
+
+.todo--title {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(53, 73, 93);
+  font-size: 20px;
+}
+
+.input--wrapper {
+  border-left: 1px solid rgb(217, 222, 226);
+}
+
+.input--box {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(117, 117, 117);
+}
+
+.input--box:focus {
+  outline: none;
+}
+
+.input--button {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(48, 166, 74);
+}
+
+.list--compo {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  justify-content: start !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+.list--compo--content {
+  position: absolute;
+  left: 40px;
+}
+
+.list--compo--content p {
+  padding-left: 10px;
+}
+.list--compo--content input {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  height: 17px;
+  width: 17px;
+}
+
+.list--compo--button {
+  position: absolute;
+  right: 30px;
+}
+
+.list--btn {
+  width: 40px;
+  height: 40px;
+}
+
+#edit {
+  background-color: rgb(48, 166, 74);
+}
+#delete {
+  background-color: rgb(218, 56, 73);
+}

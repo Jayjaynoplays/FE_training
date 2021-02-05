@@ -19,7 +19,7 @@
               <i class="fas fa-plus"></i>
             </button>
           </div>
-          <hi
+          <task
             v-for="(task, index) in tasks"
             :key="index"
             :task="task"
